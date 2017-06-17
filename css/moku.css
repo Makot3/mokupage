@@ -1,0 +1,8 @@
+@charset "UTF-8";
+p { color: red; }
+header nav ul li a{
+  color: #fff;
+  font-family: "Montserrat",sans-serif; /*フォント指定*/
+  font-size: 16px;
+  padding; 0 1em;
+}
