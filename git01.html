@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Rubyもくもく会in東上線らへん/ABOUT</title>
+   <link rel="stylesheet" href="css/moku.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">MAIL</a></li>
+        </ul>
+      </nab>
+      <h1>Rubyもくもく会 in 東上線らへん</h1>
+    </header>
+
+    <main>
+      <div class="listarea">
+        <h1>Github</h1>
+        <h2>初期設定</h2>
+        <ul>
+          <li>git config --global user.name 'xxx' # 名前登録</li>
+          <li>git config --global user.email 'xxx@xxx.com' # メールアドレス登録 ~/.gitconfigファイルに記録される</li>
+          <li>git init # リポジトリを作りたいディレクトリで。リポジトリの初期化</li>
+        </ul>
+        
+        <h2>確認</h2>
+        <ul>
+          <li>git remote # 設定した名前を表示</li>
+          <li>git branch # ブランチを表示。*付きが現在のブランチ</li>
+          <li>git status # Gitがどのように作業ディレクトリとリポジトリを認識しているか。追跡されていないファイルを表示</li>
+        </ul>
+
+        <h2>ステージングからプッシュ</h2>
+        <ul>
+          <li>git add # 監視対象にする。ステージング。 git add . でカレント以下全てのファイルをステージする。</li>
+          <li>git commit # コミット。エディタが起動するのでコメントを書く。</li>
+          <li>git push xxx master # Githubへプッシュ。xxxは git remote add xxx git@.... でリポジトリを作成した時の名前</li>
+        </ul>
+
+        <h2>その他</h2>
+        <ul>
+          <li>git reset HEAD # アンステージ</li>
+          <li>git log # ログを見る。 git log --oneline で一行一履歴表示</li>
+          <li>git diff ID1 ID2 #...</li>
+          <li>git checkout ID File #...</li>
+          <li>git branch ブランチ名 # ブランチ作成</li>
+          <li>git checkout ブランチ名 # ブランチ切り替え</li>
+          <li>git merge ブランチ名 # ...</li>
+        </ul>
+      </div>      
+    </main>
+    <footer>
+      <p>mit</p>
+    </footer>
+  </body>
+</html>

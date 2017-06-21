@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Rubyもくもく会in東上線らへん/ABOUT</title>
+   <link rel="stylesheet" href="css/moku.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">TOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">MAIL</a></li>
+        </ul>
+      </nab>
+      <h1>Rubyもくもく会 in 東上線らへん</h1>
+    </header>
+
+    <main>
+      <div class="listarea">
+        <h1>vim</h1>
+        <h2>自動インデント設定</h2>
+        <p>cd ~ でホームに移動し、 vim .vimrc で.vimrcというファイルを編集。以下を書く</>
+        <ul>
+          <li>set tabstop=2</li>
+          <li>set shiftwidth=2</li>
+          <li>set expandtab</li>
+          <li>set softtabstop=2</li>
+          <li>set autoindent</li>
+          <li>set smartindent</li>
+        </ul>
+        
+        <h2>その他操作</h2>
+        <ul>
+          <li>移動は、 hjklでできる</li>
+          <li>i 挿入モード。編集したらEscでノーマルモード。:wqで保存して終了。write, quit</li>
+          <li>/ 検索モード。検索したい文字列を入力しエンター。i で挿入モードに入れる。</li>
+          <li>検索モードからEscでノーマルモードに戻り、n でネクスト検索、Shift+nで逆検索</li>
+          <li>検索では正規表現も使える</li>
+          <li>コピペ選択は、ノーマルモードで選択したいところまで移動し v </li>
+          <li>コピーは、選択した状態で y (ヤング：引っ張るという意味）</li>
+          <li>貼り付けは、Shift+p</li>
+          <li>10Shift+p だと10回貼り付けの意味</li>
+          <li>切り取りは、選択した状態で d</li>
+          <li>dd で行ごと切り取り</li>
+        </ul>
+        <h2>その他操作2</h2>
+        <ul>
+          <li>アンドゥはノーマルモードで u リドゥは　Ctrl+r</li>
+          <li>Ctrl+z は戻るではなく一時停止。そのアプリがバックグラウンドに移動し端末に戻る。そのアプリを再開するのは fg （フォアグラウンド）</li>
+          <li>10u 10回アンドゥ、10Cftl+r 10回リドゥ。9999u で最初の状態に戻す</li>
+          <li>ノーマルモードで　Shift+g 最後に移動</li>
+          <li>置換　ノーマルモードで :%s/元文字列/新しい文字列 この/は[でもいい。:%s は全置換</li>
+
+        </ul>
+
+      </div>      
+    </main>
+    <footer>
+      <p>mit</p>
+    </footer>
+  </body>
+</html>
