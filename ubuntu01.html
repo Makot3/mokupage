@@ -21,19 +21,71 @@
       <div class="listarea">
         <h1>Ubuntu</h1>
         <h2>セキュリティソフトインストール</h2>
-        <p>...</p>
+        <p>clamtk</p>
         
-        <h2>編集中</h2>
+        <h2>操作</h2>
         <ul>
           <li>mv 移動元ファイル 移動先ディレクトリ # ファイル移動</li>
           <li>mv 元ファイル 変更後ファイル # ファイル名変更</li>
+          <li>pwd # カレントディレクトリの確認</li>
+          <li>file ファイル名 # ファイルの種類</li>
+          <li>less ファイル名 # 一画面ずつ</li>
+          <li>cp コピー元 コピー先 # コピー</li>
+          <li>rm ファイル名 # ファイル削除※ゴミ箱経由しない</li>
+          <li>mkdir # ディレクトリ作成</li>
         </ul>
         
         <h2>その他操作</h2>
         <ul>
-          <li>...</li>
+          <li>apt list # パッケージの一覧</li>
+          <li>apt list > packagelist.txt # ってやるといい。多いから</li>
+          <li>apt list --installed # インストールされている一覧</li>
+          <li>apt list --upgradable # 更新可能なパッケージ一覧</li>
+          <li>apt list --installed | wc -l # インストールされているパッケージ数※wc -l は行数を表示</li>
+          <li>apt remove パッケージ名 # アンインストール</li>
+          <li>apt show # パッケージ情報（インストールされていないものもOK）</li>
         </ul>
       </div>      
+      <p>#ファイルの先頭だけ表示  head -n 表示件数　ファイル名</p>
+      <p>#末尾 tail -n 件数　ファイル名</p>
+      <p>#ソートsort</p>
+      <p>sort -r 逆順</p>
+      <p>sort -n 数値で</p>
+
+     <p>#文字数カウントwc ファイル名　#行数、単語数、バイト数</p>
+     <p>wc -l #行数</p>
+
+<p>#検索
+grep オプション　パターン　ファイル名
+  grep http ファイル名　#ファイルからhttpをいう文字列を含む行を抜き出す
+  　grep echo *.sh #~.shファイルからechoが含まれる行を表示
+  　grep -i http ファイル名　#大文字小文字にかかわらずhttpで検索</p>
+ <p> メタキャラ
+  　. 任意一文字
+  　* 直前の文字の0回以上繰り返し
+  　^ 行頭
+  　$ 行末
+  　[] カッコ内の1文字
+    \　直後の1文字はメタキャラではない
+</p>
+<p>
+#ファイル検索
+find 検索ディレクトリ　検索式
+　find . -name "*.sh" #ファイル名に.shがつくファイルを検索
+　-name 文字列　#ファイル名で検索
+　-size 数値　#サイズで検索　+100k:100バイト以上
+　-perm アクセス権
+　-type ファイルタイプ
+　-user ユーザー名
+find -perm 600 -exec ls -l {} \;
+アクセス権が600のファイルを検索して詳細に表示
+
+find -size 0 -type f -exec rm -i {} \;
+カレント以下の0サイズファイルを消す
+</p>
+<p>
+#ls -l　は ll　でもOK
+</p>
    
     </main>
     <footer>
